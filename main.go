@@ -190,6 +190,9 @@ func worker() {
 	}
 }
 
+/**
+ 构建一个Testcr类型的资源
+ */
 func NewTestcr(name, ip, uid, key interface{}) *unstructured.Unstructured {
 	return &unstructured.Unstructured{
 		Object: map[string]interface{}{
